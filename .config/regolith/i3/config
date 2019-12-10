@@ -55,6 +55,9 @@ bindsym $mod+x exec /usr/bin/nautilus
 # start todoist
 bindsym $mod+v exec /usr/bin/sensible-browser todoist.com
 
+# start mailspring
+bindsym $mod+m exec /usr/bin/mailspring
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
