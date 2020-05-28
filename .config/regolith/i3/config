@@ -58,6 +58,9 @@ bindsym $mod+v exec /usr/bin/sensible-browser todoist.com
 # start mailspring
 bindsym $mod+m exec /usr/bin/mailspring
 
+# start zotero
+bindsym $mod+z exec zotero
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -141,46 +144,46 @@ bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $ws1
-bindsym $mod+Shift+2 move container to workspace $ws2
-bindsym $mod+Shift+3 move container to workspace $ws3
-bindsym $mod+Shift+4 move container to workspace $ws4
-bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
-bindsym $mod+Shift+0 move container to workspace $ws10
-bindsym $mod+Shift+Ctrl+1 move container to workspace $ws11
-bindsym $mod+Shift+Ctrl+2 move container to workspace $ws12
-bindsym $mod+Shift+Ctrl+3 move container to workspace $ws13
-bindsym $mod+Shift+Ctrl+4 move container to workspace $ws14
-bindsym $mod+Shift+Ctrl+5 move container to workspace $ws15
-bindsym $mod+Shift+Ctrl+6 move container to workspace $ws16
-bindsym $mod+Shift+Ctrl+7 move container to workspace $ws17
-bindsym $mod+Shift+Ctrl+8 move container to workspace $ws18
-bindsym $mod+Shift+Ctrl+9 move container to workspace $ws19
+bindsym $mod+$alt+1 move container to workspace $ws1
+bindsym $mod+$alt+2 move container to workspace $ws2
+bindsym $mod+$alt+3 move container to workspace $ws3
+bindsym $mod+$alt+4 move container to workspace $ws4
+bindsym $mod+$alt+5 move container to workspace $ws5
+bindsym $mod+$alt+6 move container to workspace $ws6
+bindsym $mod+$alt+7 move container to workspace $ws7
+bindsym $mod+$alt+8 move container to workspace $ws8
+bindsym $mod+$alt+9 move container to workspace $ws9
+bindsym $mod+$alt+0 move container to workspace $ws10
+bindsym $mod+$alt+Ctrl+1 move container to workspace $ws11
+bindsym $mod+$alt+Ctrl+2 move container to workspace $ws12
+bindsym $mod+$alt+Ctrl+3 move container to workspace $ws13
+bindsym $mod+$alt+Ctrl+4 move container to workspace $ws14
+bindsym $mod+$alt+Ctrl+5 move container to workspace $ws15
+bindsym $mod+$alt+Ctrl+6 move container to workspace $ws16
+bindsym $mod+$alt+Ctrl+7 move container to workspace $ws17
+bindsym $mod+$alt+Ctrl+8 move container to workspace $ws18
+bindsym $mod+$alt+Ctrl+9 move container to workspace $ws19
 
 # move focused container to workspace, move to workspace
-bindsym $mod+$alt+1 move container to workspace $ws1; workspace $ws1  
-bindsym $mod+$alt+2 move container to workspace $ws2; workspace $ws2
-bindsym $mod+$alt+3 move container to workspace $ws3; workspace $ws3
-bindsym $mod+$alt+4 move container to workspace $ws4; workspace $ws4
-bindsym $mod+$alt+5 move container to workspace $ws5; workspace $ws5
-bindsym $mod+$alt+6 move container to workspace $ws6; workspace $ws6
-bindsym $mod+$alt+7 move container to workspace $ws7; workspace $ws7
-bindsym $mod+$alt+8 move container to workspace $ws8; workspace $ws8
-bindsym $mod+$alt+9 move container to workspace $ws9; workspace $ws9
-bindsym $mod+$alt+0 move container to workspace $ws10; workspace $ws10
-bindsym $mod+$alt+Ctrl+1 move container to workspace $ws11; workspace $ws11
-bindsym $mod+$alt+Ctrl+2 move container to workspace $ws12; workspace $ws12
-bindsym $mod+$alt+Ctrl+3 move container to workspace $ws13; workspace $ws13
-bindsym $mod+$alt+Ctrl+4 move container to workspace $ws14; workspace $ws14
-bindsym $mod+$alt+Ctrl+5 move container to workspace $ws15; workspace $ws15
-bindsym $mod+$alt+Ctrl+6 move container to workspace $ws16; workspace $ws16
-bindsym $mod+$alt+Ctrl+7 move container to workspace $ws17; workspace $ws17
-bindsym $mod+$alt+Ctrl+8 move container to workspace $ws18; workspace $ws18
-bindsym $mod+$alt+Ctrl+9 move container to workspace $ws19; workspace $ws19
+bindsym $mod+Shift+1 move container to workspace $ws1; workspace $ws1  
+bindsym $mod+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $mod+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $mod+Shift+7 move container to workspace $ws7; workspace $ws7
+bindsym $mod+Shift+8 move container to workspace $ws8; workspace $ws8
+bindsym $mod+Shift+9 move container to workspace $ws9; workspace $ws9
+bindsym $mod+Shift+0 move container to workspace $ws10; workspace $ws10
+bindsym $mod+Shift+Ctrl+1 move container to workspace $ws11; workspace $ws11
+bindsym $mod+Shift+Ctrl+2 move container to workspace $ws12; workspace $ws12
+bindsym $mod+Shift+Ctrl+3 move container to workspace $ws13; workspace $ws13
+bindsym $mod+Shift+Ctrl+4 move container to workspace $ws14; workspace $ws14
+bindsym $mod+Shift+Ctrl+5 move container to workspace $ws15; workspace $ws15
+bindsym $mod+Shift+Ctrl+6 move container to workspace $ws16; workspace $ws16
+bindsym $mod+Shift+Ctrl+7 move container to workspace $ws17; workspace $ws17
+bindsym $mod+Shift+Ctrl+8 move container to workspace $ws18; workspace $ws18
+bindsym $mod+Shift+Ctrl+9 move container to workspace $ws19; workspace $ws19
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -348,8 +351,12 @@ exec --no-startup-id /usr/bin/unclutter -b
 # Refresh wallpaper on screen resolution change
 exec --no-startup-id /usr/bin/xeventbind resolution /usr/bin/wallpaper-refresh
 
-# Start OneDrive monitor
-exec --no-startup-id onedrive --monitor
-
 # Set key repeat
 exec --no-startup-id xset r rate 400 25 
+
+# move focused workspace between monitors
+bindsym $mod+Ctrl+greater move workspace to output right
+bindsym $mod+Ctrl+less move workspace to output left
+
+# workspace back and forth
+workspace_auto_back_and_forth yes
