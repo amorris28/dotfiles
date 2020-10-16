@@ -1,3 +1,5 @@
+
+let g:python3_host_prog = expand('~/miniconda3/bin/python3.8')
 " Install plugins
 call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
@@ -81,7 +83,7 @@ let g:deoplete#enable_at_startup = 1
           \ 'tex': g:vimtex#re#deoplete
           \})
 if !exists('g:deoplete#omni#input_patterns')
-  let g:deoplete#omni#input_patterns = {}
+  let g:deoplete#custom#var = {}
 endif
 " let g:deoplete#disable_auto_complete = 1
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
