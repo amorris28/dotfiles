@@ -134,6 +134,7 @@ unset __conda_setup
 alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
+export VISUAL=nvim
 export EDITOR=nvim
 export BROWSER=/usr/bin/chromium-browser
 alias config='/usr/bin/git --git-dir=/home/andrew/.cfg/ --work-tree=/home/andrew'
